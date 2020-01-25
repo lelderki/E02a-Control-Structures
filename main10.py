@@ -4,12 +4,12 @@ import sys, random
 assert sys.version_info >= (3,7), "This script requires at least Python 3.7"
 
 
-print('Greetings!')
-colors = ['red','orange','yellow','green','blue','violet','purple']
-play_again = ''
+print('Greetings!') #the first line says "Greetings!"
+colors = ['red','orange','yellow','green','blue','violet','purple'] #This is the color choices
+play_again = '' #this lets the player keep playing
 best_count = sys.maxsize            # the biggest number
 
-while (play_again != 'n' and play_again != 'no'):
+while (play_again != 'n' and play_again != 'no'): #This is for when the game asks if the player wants to play again and if they answer no
     match_color = random.choice(colors)
     count = 0
     color = ''
